@@ -1,0 +1,22 @@
+// 13 wap to generate numbers divisible by 2 and divisible by 3,but if the number is divisible by both 2 and 3 print the message pass
+#include <stdio.h>
+
+int main() { int start, end;
+
+printf("Enter the starting number: ");
+scanf("%d", &start);
+
+printf("Enter the ending number: ");
+scanf("%d", &end);
+
+printf("Numbers divisible by 2 and 3:\n");
+for (int num = start; num <= end; num++) {
+    if (num % 2 == 0 && num % 3 == 0) {
+        printf("%d (Pass)\n", num);
+    } else if (num % 2 == 0) {
+        printf("%d\n", num);
+    }
+}
+
+return 0;
+}

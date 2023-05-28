@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+void marks();
+int main()
+{
+    marks();
+    return 0;
+}
+void marks()
+{
+    int tam,eng,mat,sci,soc,tot,avg;
+    cout<<"\nEnter the Marks:";
+    cin>>tam>>eng>>mat>>sci>>soc;
+    tot=tam+eng+mat+sci+soc;
+    avg=tot/5;
+    cout<<"\nTotal Marks:"<<tot;
+    cout<<"\nAverage:"<<avg;
+    if(tot>230)
+    {
+        if(tot>=480)
+        {
+            cout<<"\nGrade:A";
+        }
+        else if(tot>400&&tot<480)
+        {
+            cout<<"\nGrade:B";
+        }
+        else if(tot<400)
+        {
+            cout<<"\nGrade:C";
+            }
+        cout<<"\nPass";
+    }
+    else
+    {
+        cout<<"\nFail";
+    }
+}

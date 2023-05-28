@@ -1,0 +1,20 @@
+/ 11 write a c++ program to print tables of 5 
+#include <iostream>
+
+void printTableOf5(int limit) {
+    for (int i = 1; i <= limit; i++) {
+        std::cout << "5 x " << i << " = " << 5 * i << std::endl;
+    }
+}
+
+int main() {
+    int limit;
+
+    std::cout << "Enter the limit: ";
+    std::cin >> limit;
+
+    std::cout << "Table of 5 up to " << limit << ":" << std::endl;
+    printTableOf5(limit);
+
+    return 0;
+}

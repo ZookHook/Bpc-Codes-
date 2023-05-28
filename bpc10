@@ -1,0 +1,22 @@
+// 10 c program to generate odd number without using loop #include <stdio.h>
+
+void generateOdd(int n) { if (n <= 0) { return; }
+
+generateOdd(n - 1);
+
+if (n % 2 != 0) {
+    printf("%d ", n);
+}
+}
+
+int main() { int limit;
+
+printf("Enter the limit: ");
+scanf("%d", &limit);
+
+printf("Odd numbers up to %d: ", limit);
+generateOdd(limit);
+printf("\n");
+
+return 0;
+}

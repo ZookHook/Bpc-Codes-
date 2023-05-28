@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void printTableOf5(int limit) {
+    for (int i = 1; i <= limit; i++) {
+        printf("5 x %d = %d\n", i, 5 * i);
+    }
+}
+
+int main() {
+    int limit;
+
+    printf("Enter the limit: ");
+    scanf("%d", &limit);
+
+    printf("Table of 5 up to %d:\n", limit);
+    printTableOf5(limit);
+
+    return 0;
+}
